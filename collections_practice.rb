@@ -49,7 +49,7 @@ end
 def add_s(array)
   new_array =[]
   array.each do |element|
-    new_array << element == "#{element}s" if element != array[1]
+    new_array << (element == "#{element}s") if element != array[1]
   end
   new_array
 end
