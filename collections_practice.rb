@@ -47,8 +47,9 @@ def sum_array(numbers)
 end
 
 def add_s(array)
-  array.collect do |element|
-    array << element == "#{element}s" if element != array[1]  
+  new_array =[]
+  array.each do |element|
+    new_array << element == "#{element}s" if element != array[1]
   end
-  array
+  new_array
 end
