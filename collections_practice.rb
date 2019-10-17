@@ -48,7 +48,9 @@ end
 
 def add_s(array)
   array.collect do |element|
-    element == "#{element}s"
+    if element != array[2]
+      element == "#{element}s"
+    end
   end
   array
 end
