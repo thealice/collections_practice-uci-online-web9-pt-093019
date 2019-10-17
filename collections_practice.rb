@@ -50,4 +50,5 @@ def add_s(array)
   array.collect do |element|
     element == "#{element}s"
   end
+  array
 end
