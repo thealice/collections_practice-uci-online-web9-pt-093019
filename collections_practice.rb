@@ -42,7 +42,7 @@ end
 
 def sum_array(array)
   array.collect do
-    array[0] + array[1] = array[0]
+    array[0] += array[1]
   end
   array
 end
