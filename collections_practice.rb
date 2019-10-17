@@ -52,5 +52,4 @@ def add_s(array)
       element == "#{element}s"
     end
   end
-  array
 end
