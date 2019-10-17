@@ -45,3 +45,12 @@ def sum_array(numbers)
   numbers.each {|number| sum += number}
   sum
 end
+
+def add_s(array)
+  array.collect do |element|
+    if element != array[2]
+      array << element + s
+    end
+  end
+  array
+end
