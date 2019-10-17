@@ -48,8 +48,8 @@ end
 
 def add_s(array)
   array.collect do |element|
-    if element != array[2]
-      array << element.concat("#{element}" + "s")
+    if element != array[1]
+      element == "#{element}s"
     end
   end
   array
