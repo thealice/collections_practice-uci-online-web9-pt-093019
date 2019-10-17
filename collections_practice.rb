@@ -47,11 +47,7 @@ def sum_array(numbers)
 end
 
 def add_s(array)
-  array.collect do |element|
-    if element == array[1]
-      element == element
-    else
-      element == "#{element}s"
-    end
-  end
+  array.collect do |item|
+   item == array[1] ? item : "#{item}s"
+ end
 end
