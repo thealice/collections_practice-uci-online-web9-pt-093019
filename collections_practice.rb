@@ -49,7 +49,7 @@ end
 def add_s(array)
   array.collect do |element|
     if element != array[2]
-      array << element + s
+      array << element.concat("#{element}" + "s")
     end
   end
   array
