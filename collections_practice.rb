@@ -40,10 +40,9 @@ def find_a(array)
   a_words
 end
 
-def sum_array(array)
-  new_array =[]
-  array.each do
-    new_array << array[0] += array[1]
+def sum_array(numbers)
+  sum = 0
+  numbers.each {|sum, number| sum += number}
   end
-  new_array
+  sum
 end
